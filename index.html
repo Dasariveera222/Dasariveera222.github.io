@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a4457b3ffc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo4.png" alt="Your Image"  class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Accomplishments">Accomplishments</a></li>
+                    <li><a href="#portfolio">My Work</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h2>Hi, I'm <span>Dasari Chinna Veeraiah</span></h2>
+                <p>Student at VR Siddhartha</p>
+
+            </div>
+        </div>
+    </div>
+<!-- --------about--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> highly motivated and passionate individual capable of efficient 
+                        time management and work under pressure in all environments. 
+                        Searching for new opportunities in a dynamic organization to 
+                        earn practical experience in this field.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Technical Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">experience</p>
+                        <p class="tab-links" onclick="opentab('education')">education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming skills</span><br>Python, Java, Advanced Java, C, SQL</li> 
+                            <li><span>Programming skills</span><br>HTML, CSS, java script </li> 
+                            <li><span>Tools</span><br>pycharm, Eclipse, Android studio, VS Code</li> 
+                            <li><span>Frame work</span><br>flutter, Django</li> 
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - current</span><br>working as Academic support volunteer<br>At Make A Difference</li> 
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - current</span><br>B.Tech(CSE) at VR Siddhartha Engineering College<br>CGPA : 9.0</li> 
+                            <li><span>2018 - 2020</span><br>Intermediate at Jawahar Navodaya Vidyalaya<br>percentage : 91.6%</li> 
+                            <li><span>2018 </span><br>S.S.C. at Jawahar Navodaya Vidyalaya<br>percentage : 92.6%</li> 
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+<!---------------------projects----------------------------->
+<div id="Accomplishments">
+    <div class="container">
+        <div class="sub-title">Accomplishments</div>
+        <div class="Accomplishments-list">
+            <div>
+                <h2>Certifications</h2>
+                <ul>
+                    <li>Programming essentials in Python (CISCO) </li> 
+                    <li>Java Programming Fundamentals (Infosys Springboard)</li> 
+                    <li>C++ certification (NPTEL)</li> 
+                    <li>STEP Course by THE HINDU</li> 
+                    <li>Foundations of R software(NPTEL)</li> 
+                </ul>
+            </div>
+            <div>
+                <h2> Extra-Curricular Activities</h2>
+                <ul>
+                    <li>I cracked Jawahar Navodaya Vidyalaya Selection Test at the age of Eleven.</li> 
+                    <li>Stood 1st in ACUMEN CSE (technical and programming) contest in college</li> 
+                    <li>Completed NCC-A certificate </li> 
+                    <li>Received medals in academic excellence and many competitions</li> 
+                    <li>Working as an academic support volunteer in Make A Difference NGO </li> 
+                    </ul>
+                    
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- --------------------------------------portfolio--------------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>College Suggesta App</h3>
+                    <p>Completed an EPICS Project “College Suggesta”, college suggestion for those joining AP engineering colleges
+                        using API as backend which is developed by Django and frontend with FLUTTER for app development
+                    </p>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/gi tract.jpg">
+                <div class="layer">
+                    <h3>Gastro-Intestinal Tract Segmentation</h3>
+                        <p> Currently working on a project “Automated Gastro-Intestinal Tract Segmentation Using Deep Learning
+                            Architectures” which helps oncologists to segment the healthy organs at risk while targeting of high doses of
+                            x-ray beams to the tumours.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ------------------------------contact------------------
+
+
+
+
+
+    <!-- <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script> -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> veeranani222@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://www.instagram.com/dasari.veeraa/"><i
+                            class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/dasari-chinna-veeraiah/"><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+                <a href="images/veera resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-rigth">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyrigth">
+        <p>Copyrigth @ dasari_veera <i class="fa-regular fa-heart"></i></p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxdAu0JqLHHIhmOpSChG6KMo7HAG-Gfnobr9HLyPfvmkRcn1w895iKw7K_vNZ7YWZiW_g/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function () {
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
+
